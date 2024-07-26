@@ -66,7 +66,7 @@ const Registration = () => {
                 </Text>
               </Flex>
               <Flex>
-                <Button className="btn-outline btn-dark-red">
+                <Button className="btn-outline btn-dark-red registration__video-box">
                   Sign up now
                 </Button>
               </Flex>

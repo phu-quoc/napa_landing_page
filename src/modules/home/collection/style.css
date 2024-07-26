@@ -13,9 +13,8 @@
     text-align: center;
 }
 
-.collection .collection__group-button--mobile {
-    display: flex;
-    flex-wrap: nowrap;
+.collection__group-button--gap {
+    gap: 16px;
 }
 
 .pb-128 {

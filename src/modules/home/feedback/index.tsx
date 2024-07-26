@@ -66,7 +66,12 @@ const Feedback = () => {
           </Flex>
         )}
       </Flex>
-      <Row gutter={24} className="feedback__slider mt-80">
+      <Row
+        gutter={24}
+        className={
+          isMobile ? "feedback__slider mt-32" : "feedback__slider mt-80"
+        }
+      >
         <div className={"feedback__bg-slider"} />
         {FEEDBACKS.map((item, i) => (
           <Col span={isMobile ? 18 : 7} key={i}>

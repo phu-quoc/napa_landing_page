@@ -30,19 +30,23 @@ const Collection = () => {
           proin neque placerat at bibendum quam tellus.
         </Text>
       </Flex>
-      <Row gutter={80} className="mt-80">
+      <Row gutter={[80, 32]} className="mt-80">
         <Col>
           <Flex
             vertical={!isMobile}
-            className="collection__group-button--mobile"
+            className="collection__group-button--mobile collection__group-button--gap"
           >
             {COLLECTIONS.map((item, i) => (
               <Button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`p-16 ${active === i && "active"} ${i !== 0 && "mt-16"} flex-start`}
+                className={`${active === i ? "active p-16" : "p-16"} .collection__button-flex-none`}
               >
-                <Flex style={{ minWidth: "100%", flexWrap: "nowrap" }}>
+                <Flex
+                  style={{
+                    width: "100%",
+                  }}
+                >
                   {item.icon}
                   <Text className="font-size-20 px-0 py-16">{item.text}</Text>
                   {active === i && (
