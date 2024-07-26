@@ -1,0 +1,55 @@
+.bg-dark-red {
+    background: #78350F;
+    overflow-x: hidden;
+}
+
+.chart-wrapper {
+    position: relative;
+    align-items: center;
+    height: 717px;
+    justify-content: center;
+}
+
+.chart {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    bottom: 5%;
+    right: 10%;
+}
+
+.round {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    bottom: 22%;
+    right: 10%;
+}
+
+.chart__image {
+    position: absolute;
+    width: 326px;
+    height: 345px;
+    top: 5%;
+    left: 10%;
+}
+
+.chart__text-box {
+    position: relative;
+    align-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.chart__title {
+    font-size: 96px;
+    font-weight: 800;
+}
+
+.chart__title--mobile {
+    font-size: 56px;
+}
+
+.chart__text-box .text-white {
+    color: #FFFFFF;
+}

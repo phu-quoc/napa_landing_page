@@ -1,0 +1,10 @@
+.article {
+    background-image: url("../../../assets/images/bg-article.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+}
+
+.article .article__text-16 {
+    font-size: 16px;
+}

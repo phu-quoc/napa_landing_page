@@ -1,0 +1,37 @@
+.event {
+    background: #FEF3C7;
+}
+
+.event__wrapper {
+    position: relative;
+}
+
+.event--bg-image {
+    background-image: url("../../../assets/images/bg-event.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+}
+
+.event__signup {
+}
+
+.event__bg-signup {
+    position: absolute;
+    background-image: url("../../../assets/images/bg-event-backlights.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+    bottom: 7%;
+    right: 0;
+    width: 185px;
+    height: 285px;
+}
+
+.event .event__text-16 {
+    font-size: 16px;
+}
+
+.event__text-box-mobile {
+    text-align: center;
+}

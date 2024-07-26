@@ -1,0 +1,34 @@
+.feedback {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.rounded {
+    border-radius: 100px;
+    border-width: 2px;
+    padding: 12px;
+    border-color: #78350F;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.feedback .feedback__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+}
+
+.feedback__bg-slider {
+    position: absolute;
+    background: #FDE68A;
+    top: -10%;
+    width: 95%;
+    height: 100%;
+}
+
+.feedback__text--mobile {
+    text-align: center;
+}
