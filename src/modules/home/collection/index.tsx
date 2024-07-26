@@ -42,7 +42,7 @@ const Collection = () => {
                 onClick={() => setActive(i)}
                 className={`p-16 ${active === i && "active"} ${i !== 0 && "mt-16"} flex-start`}
               >
-                <Flex wrap={false}>
+                <Flex style={{ minWidth: "100%", flexWrap: "nowrap" }}>
                   {item.icon}
                   <Text className="font-size-20 px-0 py-16">{item.text}</Text>
                   {active === i && (

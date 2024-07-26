@@ -17,6 +17,11 @@
     border-style: solid;
 }
 
+.fixed-button-width {
+    width: 100%; /* Đặt kích thước cố định cho nút Button */
+    max-width: 100%; /* Đảm bảo nút Button không vượt quá kích thước của container cha */
+}
+
 .btn-component--py-0 {
     padding-left: 0px;
     padding-right: 0px;
