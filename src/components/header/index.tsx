@@ -1,8 +1,9 @@
 import { Flex, Typography } from "antd";
 import "./style.css";
-import Link from "../link";
+import LinkComponent from "../link";
 import { useDevice } from "../../hooks/useDevice";
 import Button from "../button";
+import ROUTERS from "../../constants/router";
 
 const { Title } = Typography;
 const Header = () => {
@@ -11,13 +12,13 @@ const Header = () => {
     <Flex
       align="center"
       justify="space-between"
-      className={isMobile ? "app-header app-header--mobile" : "app-header"}
+      className={`${isMobile ? "app-header--mobile" : ""} app-header`}
     >
-      <Link className="logo">
+      <LinkComponent to={ROUTERS.HOME.path} className="logo">
         <Title level={5} className="text-dark-red">
           Collers
         </Title>
-      </Link>
+      </LinkComponent>
       {isMobile ? (
         <div className="app-header__menu-scale">
           <svg
@@ -54,11 +55,33 @@ const Header = () => {
         </div>
       ) : (
         <Flex align="center">
-          <Link className="link-dark-red mr-8">Products</Link>
-          <Link className="link-dark-red mr-8">Solutions</Link>
-          <Link className="link-dark-red mr-8">Pricing</Link>
-          <Link className="link-dark-red mr-8">Resources</Link>
-          <Link className="link-dark-red mr-8">Log In</Link>
+          <LinkComponent
+            to={ROUTERS.PRODUCT.path}
+            className="link-dark-red mr-8"
+          >
+            Products
+          </LinkComponent>
+          <LinkComponent
+            to={ROUTERS.SOLUTIONS.path}
+            className="link-dark-red mr-8"
+          >
+            Solutions
+          </LinkComponent>
+          <LinkComponent
+            to={ROUTERS.PRICING.path}
+            className="link-dark-red mr-8"
+          >
+            Pricing
+          </LinkComponent>
+          <LinkComponent
+            to={ROUTERS.RESOURCES.path}
+            className="link-dark-red mr-8"
+          >
+            Resources
+          </LinkComponent>
+          <LinkComponent to={ROUTERS.LOGIN.path} className="link-dark-red mr-8">
+            Log In
+          </LinkComponent>
           <Button className="btn-outline btn-dark-red">Sign up now</Button>
         </Flex>
       )}

@@ -11,9 +11,7 @@ const Product = () => {
 
   return (
     <Flex
-      className={
-        isMobile ? "container container--mobile product" : "container product"
-      }
+      className={`${isMobile ? "container--mobile" : ""} container product`}
       style={{ background: "#0F172A" }}
       vertical
     >
@@ -29,7 +27,7 @@ const Product = () => {
       </Flex>
       <Row
         gutter={[48, 32]}
-        className={isMobile ? "pt-32 product__group" : "pt-80 product__group"}
+        className={`${isMobile ? "pt-32" : "pt-80"} product__group`}
       >
         <div className="product__backlights" />
         {PRODUCTS.map((item, i) => (
@@ -54,9 +52,7 @@ const Product = () => {
             >
               <Flex vertical className="card-body">
                 <Text className="h6 text-white">{item.title}</Text>
-                <Text className="mt-16 font-size-18 text-white">
-                  {item.content}
-                </Text>
+                <Text className="mt-16 text-18 text-white">{item.content}</Text>
               </Flex>
               <Flex className="card-footer" justify="center" vertical>
                 <Button className="btn-outline btn-white p-16">

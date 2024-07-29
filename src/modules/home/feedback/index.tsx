@@ -12,9 +12,7 @@ const Feedback = () => {
 
   return (
     <Flex
-      className={
-        isMobile ? "container container--mobile feedback" : "container feedback"
-      }
+      className={`${isMobile ? "container--mobile" : ""} container feedback`}
       vertical
     >
       <Flex
@@ -68,9 +66,7 @@ const Feedback = () => {
       </Flex>
       <Row
         gutter={24}
-        className={
-          isMobile ? "feedback__slider mt-32" : "feedback__slider mt-80"
-        }
+        className={`${isMobile ? "mt-32" : "mt-80"} feedback__slider`}
       >
         <div className={"feedback__bg-slider"} />
         {FEEDBACKS.map((item, i) => (

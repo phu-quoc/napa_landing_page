@@ -12,18 +12,14 @@ const Collection = () => {
   const [active, setActive] = useState(0);
   return (
     <Flex
-      className={
-        isMobile
-          ? "container collection--mobile collection"
-          : "container collection pb-128"
-      }
+      className={`${
+        isMobile ? "collection--mobile" : ""
+      } container collection pb-128`}
       vertical
     >
       <Flex vertical className={isMobile ? "collection__text-box--mobile" : ""}>
         <Title level={isMobile ? 5 : 2}>Grow your collection</Title>
-        <Text
-          className={isMobile ? "font-size-16 mt-32" : "font-size-18 mt-32"}
-        >
+        <Text className={`${isMobile ? "text-16" : "text-18"} mt-32`}>
           Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh
           amet dictum pellentesque sed. Eu non turpis risus odio sapien, fames
           sit rhoncus. Nec magna sed interdum sit purus tellus. Et volutpat

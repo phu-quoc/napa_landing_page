@@ -1,5 +1,5 @@
 .collection {
-    background-image: url("../../../assets/images/bg-collection.svg");
+    background-image: url("../../../assets/images/svg/bg-collection.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom center;
@@ -17,22 +17,3 @@
     gap: 16px;
 }
 
-.pb-128 {
-    padding-bottom: 128px;
-}
-
-.mt-16 {
-    margin-top: 16px;
-}
-
-.mt-32 {
-    margin-top: 32px;
-}
-
-.mt-80 {
-    margin-top: 80px;
-}
-
-.bg-white {
-    background: #FFFFFF;
-}

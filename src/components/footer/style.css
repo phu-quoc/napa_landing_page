@@ -16,7 +16,7 @@
     padding: 48px 0;
     border-width: 1px 0;
     border-style: solid;
-    border-color: #334155;
+    border-color: var(--border-color);
 }
 
 .footer__table--mobile {
@@ -26,6 +26,8 @@
 
 .footer__subtitle {
     font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
 }
 
 
@@ -59,7 +61,8 @@
     padding: 12px 0;
     display: flex;
     justify-content: center;
-    color: #E2E8F0;
+    color: var(--light-grey);
+    font-weight: 400;
 }
 
 .footer .footer__link--p-0 {

@@ -1,12 +1,14 @@
 import "./style.css";
-import Hero from "../../modules/home/hero";
-import Product from "../../modules/home/product";
-import Registration from "../../modules/home/registration";
-import Feedback from "../../modules/home/feedback";
-import Collection from "../../modules/home/collection";
-import Chart from "../../modules/home/chart";
-import Article from "../../modules/home/article";
-import Event from "../../modules/home/event";
+import { lazy } from "react";
+
+const Hero = lazy(() => import("../../modules/home/hero"));
+const Product = lazy(() => import("../../modules/home/product"));
+const Registration = lazy(() => import("../../modules/home/registration"));
+const Feedback = lazy(() => import("../../modules/home/feedback"));
+const Collection = lazy(() => import("../../modules/home/collection"));
+const Chart = lazy(() => import("../../modules/home/chart"));
+const Article = lazy(() => import("../../modules/home/article"));
+const Event = lazy(() => import("../../modules/home/event"));
 
 const Home = () => {
   return (

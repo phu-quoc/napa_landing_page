@@ -21,7 +21,7 @@ const EventCard = ({ item, className, onClick }: Props) => {
     >
       <div className="event-card__body">
         <div>
-          <Text className="font-size-18">{item.text}</Text>
+          <Text className="text-18">{item.text}</Text>
         </div>
         <Text className="h6">{item.title}</Text>
         <div className="mt-16">

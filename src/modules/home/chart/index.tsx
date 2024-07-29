@@ -34,11 +34,8 @@ const Chart = () => {
       <img src={IMAGES.CHART_POINT} className="chart__image" alt="" />
       <div className="chart__text-box">
         <Text
-          className={
-            isMobile
-              ? "chart__title chart__title--mobile text-white"
-              : "chart__title text-white"
-          }
+          className={`${isMobile ? "chart__title--mobile" : ""}
+              chart__title text-white`}
         >
           11,658,467
         </Text>

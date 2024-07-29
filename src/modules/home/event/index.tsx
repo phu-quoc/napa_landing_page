@@ -1,10 +1,11 @@
 import { Col, Flex, Row, Typography } from "antd";
 import "./style.css";
 import EventCard from "./eventCard";
-import Link from "../../../components/link";
+import LinkComponent from "../../../components/link";
 import Button from "../../../components/button";
 import { EVENTS } from "../../../mocks/events";
 import { useDevice } from "../../../hooks/useDevice";
+import ROUTERS from "../../../constants/router";
 
 const { Title, Text } = Typography;
 const Event = () => {
@@ -13,11 +14,9 @@ const Event = () => {
   return (
     <div className="event__wrapper">
       <div
-        className={
-          isMobile
-            ? "container container--mobile event event--bg-image"
-            : "container event event--bg-image"
-        }
+        className={`${
+          isMobile ? "container--mobile" : ""
+        } container event event--bg-image`}
       >
         <Flex
           justify={isMobile ? "center" : "space-between"}
@@ -25,7 +24,10 @@ const Event = () => {
           wrap
         >
           <Title level={isMobile ? 5 : 2}>Amazing events</Title>
-          <Link className="link-dark-red py-0">
+          <LinkComponent
+            to={ROUTERS.ARTICLES.path}
+            className="link-dark-red py-0"
+          >
             <Flex justify="center" align="center">
               <Text className="px-0 py-16 text-dark-red event__text-16">
                 Explore Articles
@@ -39,7 +41,7 @@ const Event = () => {
                 <path d="M10.586 5.657l-3.95-3.95A1 1 0 0 1 8.05.293l5.657 5.657a.997.997 0 0 1 0 1.414L8.05 13.021a1 1 0 1 1-1.414-1.414l3.95-3.95H1a1 1 0 1 1 0-2h9.586z"></path>
               </svg>
             </Flex>
-          </Link>
+          </LinkComponent>
         </Flex>
         <Row gutter={[24, 24]} className={isMobile ? "mt-32" : "mt-80"}>
           {EVENTS.map((item, i) => (
@@ -50,20 +52,18 @@ const Event = () => {
         </Row>
       </div>
       <div
-        className={
-          isMobile
-            ? "container container--mobile bg-dark event__signup"
-            : "container bg-dark event__signup"
-        }
+        className={`${
+          isMobile ? "container--mobile" : ""
+        } container bg-dark event__signup`}
       >
         {!isMobile && <div className="event__bg-signup" />}
         <Flex
-          className="event__text-box-mobile"
+          className="event__text-box--mobile"
           justify={isMobile ? "center" : "space-between"}
           align="center"
           wrap
         >
-          <Title level={isMobile ? 5 : 2} style={{ color: "#FFFFFF" }}>
+          <Title level={isMobile ? 5 : 2} className="event__text-box-title">
             Collect More Sneakers Today
           </Title>
           <Button

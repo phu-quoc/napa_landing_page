@@ -1,5 +1,5 @@
 .event {
-    background: #FEF3C7;
+    background: var(--event-bg);
 }
 
 .event__wrapper {
@@ -7,7 +7,7 @@
 }
 
 .event--bg-image {
-    background-image: url("../../../assets/images/bg-event.svg");
+    background-image: url("../../../assets/images/svg/bg-event.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom center;
@@ -18,7 +18,7 @@
 
 .event__bg-signup {
     position: absolute;
-    background-image: url("../../../assets/images/bg-event-backlights.svg");
+    background-image: url("../../../assets/images/svg/bg-event-backlights.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom center;
@@ -32,6 +32,10 @@
     font-size: 16px;
 }
 
-.event__text-box-mobile {
+.event__text-box--mobile {
     text-align: center;
+}
+
+.event__wrapper .event__text-box-title {
+    color: var(--white);
 }

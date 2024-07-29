@@ -34,6 +34,11 @@ const ROUTERS = {
     path: "/signup",
     id: "",
   },
+  ARTICLES: {
+    name: "ARTICLES",
+    path: "/articles",
+    id: "",
+  },
 } as const;
 
 export default ROUTERS;

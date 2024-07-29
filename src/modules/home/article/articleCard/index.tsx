@@ -34,21 +34,17 @@ const ArticleCard = ({ item, className, onClick, isMobile }: Props) => {
     >
       <Flex
         vertical
-        className={
-          isMobile
-            ? "article-card__body article-card__body--mobile"
-            : "article-card__body"
-        }
+        className={`
+            ${isMobile ? "article-card__body--mobile" : ""} article-card__body
+          `}
       >
         <Text className="h6">{item.title}</Text>
-        <Text className="font-size-18 mt-16">{item.content}</Text>
+        <Text className="text-18 mt-16">{item.content}</Text>
       </Flex>
       <div
-        className={
-          isMobile
-            ? "article-card__footer article-card__footer--mobile"
-            : "article-card__footer"
-        }
+        className={`${
+          isMobile ? "article-card__footer--mobile" : ""
+        } article-card__footer`}
       >
         <Button className="btn-component--py-0 btn-dark-red">
           <Flex>

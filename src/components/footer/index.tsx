@@ -4,34 +4,37 @@ import Button from "../button";
 import { FOOTERS } from "../../mocks/footers";
 import IMAGES from "../../constants/image";
 import { useDevice } from "../../hooks/useDevice";
+import ROUTERS from "../../constants/router";
+import LinkComponent from "../link";
 
-const { Text, Link } = Typography;
+const { Text } = Typography;
 const { Item } = List;
 const Footer = () => {
   const { isMobile } = useDevice();
   return (
-    <div
-      className={isMobile ? "footer footer--mobile bg-dark" : "footer bg-dark"}
-    >
+    <div className={`${isMobile ? "footer--mobile" : ""} footer bg-dark`}>
       <Row
         gutter={[48, 48]}
-        className={
-          isMobile ? "footer__table footer__table--mobile" : "footer__table"
-        }
+        className={`${isMobile ? "footer__table--mobile" : ""} footer__table`}
       >
         {FOOTERS.map((data, i) => (
           <Col xs={24} sm={24} md={24} lg={6} xl={6} xxl={6} key={i}>
             <List
               className="footer_list"
               header={
-                <Text className="footer__subtitle ant-list-header text-white">
+                <Text className="footer__subtitle ant-list-header">
                   {data.header}
                 </Text>
               }
               dataSource={data.data}
               renderItem={(item) => (
                 <Item>
-                  <Link className="footer__link footer__link--p-0">{item}</Link>
+                  <LinkComponent
+                    to={ROUTERS.RESOURCES.path}
+                    className="footer__link footer__link--p-0"
+                  >
+                    {item}
+                  </LinkComponent>
                 </Item>
               )}
             />
@@ -115,11 +118,9 @@ const Footer = () => {
       </Row>
       <Row
         gutter={isMobile ? [48, 24] : [48, 48]}
-        className={
-          isMobile
-            ? "footer__copyright footer__copyright--mobile"
-            : "footer__copyright"
-        }
+        className={`${
+          isMobile ? "footer__copyright--mobile" : ""
+        } footer__copyright`}
       >
         <Col
           flex="auto"
@@ -128,23 +129,41 @@ const Footer = () => {
           md={24}
           className="footer__copyright-text"
         >
-          <Text className="text-white">
+          <Text className="text-white text-16">
             Collers @ 2023. All rights reserved.
           </Text>
         </Col>
         <Col>
           <Row gutter={32}>
             <Col>
-              <Link className="footer__link">Terms</Link>
+              <LinkComponent
+                to={ROUTERS.RESOURCES.path}
+                className="footer__link"
+              >
+                Terms
+              </LinkComponent>
             </Col>
             <Col>
-              <Link className="footer__link">Privacy</Link>
+              <LinkComponent
+                to={ROUTERS.RESOURCES.path}
+                className="footer__link"
+              >
+                Privacy
+              </LinkComponent>
             </Col>
             <Col>
-              <Link className="footer__link">Contact</Link>
+              <LinkComponent
+                to={ROUTERS.RESOURCES.path}
+                className="footer__link"
+              >
+                Contact
+              </LinkComponent>
             </Col>
-            <Col>
-              <Link className="footer__link">
+            <Col className="footer__copyright-text">
+              <LinkComponent
+                to={ROUTERS.RESOURCES.path}
+                className="footer__link footer__link--p-0"
+              >
                 <svg
                   className="mr-8"
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +176,7 @@ const Footer = () => {
                   <path d="M2 12h16v2H2v-2zm0-6h16v2H2V6z"></path>
                 </svg>
                 EN
-              </Link>
+              </LinkComponent>
             </Col>
           </Row>
         </Col>

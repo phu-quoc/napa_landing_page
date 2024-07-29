@@ -29,58 +29,58 @@
 }
 
 .btn-component:hover {
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
+    color: var(--black-hover);
+    border-color: var(--black-hover);
 }
 
 .btn-component:hover span {
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
+    color: var(--black-hover);
+    border-color: var(--black-hover);
 }
 
 .btn-component .text-dark-red {
-    color: #78350F;
-    border-color: #78350F;
+    color: var(--dark-red);
+    border-color: var(--dark-red);
 }
 
 .btn-component .text-dark-red:hover {
-    color: rgba(120, 53, 15, 0.5);
-    border-color: rgba(120, 53, 15, 0.5);
+    color: var(--dark-red-hover);
+    border-color: var(--dark-red-hover);
 }
 
 .btn-component:hover .text-dark-red {
-    color: rgba(120, 53, 15, 0.5);
-    border-color: rgba(120, 53, 15, 0.5);
+    color: var(--dark-red-hover);
+    border-color: var(--dark-red-hover);
 }
 
 .btn-dark-red {
-    color: #78350F;
-    border-color: #78350F;
+    color: var(--dark-red);
+    border-color: var(--dark-red);
 }
 
 .btn-dark-red:hover {
-    color: rgba(120, 53, 15, 0.5);
-    border-color: rgba(120, 53, 15, 0.5);
+    color: var(--dark-red-hover);
+    border-color: var(--dark-red-hover);
 }
 
 .btn-dark-red:hover svg {
-    color: rgba(120, 53, 15, 0.5);
-    border-color: rgba(120, 53, 15, 0.5);
+    color: var(--dark-red-hover);
+    border-color: var(--dark-red-hover);
 }
 
 .btn-white {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
+    color: var(--white);
+    border-color: var(--white);
 }
 
 .btn-white:hover {
-    color: rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--white-hover);
+    border-color: var(--white-hover);
 }
 
 .btn-component:hover .text-white {
-    color: rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--white-hover);
+    border-color: var(--white-hover);
 }
 
 .btn-outline {
@@ -126,7 +126,7 @@
 
 .active {
     box-shadow: 0px 4px 6px -1px #0000001A;
-    background: #FFFFFF;
+    background: var(--white);
 }
 
 .flex-start {

@@ -1,20 +1,21 @@
-import './style.css'
-import {ReactNode} from "react";
+import "./style.css";
+import { ReactNode } from "react";
+import { Link, To } from "react-router-dom";
+
 type Props = {
-    href?: string,
-    className?: string,
-    children?: ReactNode,
+  to: To;
+  className?: string;
+  children?: ReactNode;
+};
+const LinkComponent = ({ to, className, children }: Props) => {
+  return (
+    <Link
+      to={to}
+      className={className ? `link-component ${className}` : "link-component"}
+    >
+      {children}
+    </Link>
+  );
+};
 
-}
-const Link = ({href, className, children}: Props) => {
-    return (
-        <a
-            href={href}
-            className={className ? `link-component ${className}` : 'link-component'}
-        >
-            {children}
-        </a>
-    )
-}
-
-export default Link;
+export default LinkComponent;

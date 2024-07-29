@@ -11,12 +11,10 @@ const Registration = () => {
 
   return (
     <Flex
-      className={
-        isMobile ? "container registration--mobile" : "container px-160"
-      }
+      className={`${isMobile ? "registration--mobile" : ""} container px-160`}
       vertical
     >
-      <Flex className={isMobile ? "box box--mobile" : "box"} vertical>
+      <Flex className={`${isMobile ? "box--mobile" : ""} box`} vertical>
         <Row gutter={80}>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
             <Flex

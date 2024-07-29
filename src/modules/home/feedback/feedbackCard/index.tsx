@@ -25,7 +25,7 @@ const FeedbackCard = ({ item, className, onClick, isMobile }: Props) => {
       </div>
       <div className="feedback-card__bottom">
         <div className="feedback-card__body">
-          <Text className={isMobile ? "font-size-16" : "font-size-24"}>
+          <Text className={isMobile ? "text-16" : "font-size-24"}>
             {item.content}
           </Text>
         </div>
