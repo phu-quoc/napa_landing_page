@@ -1,0 +1,54 @@
+@import '../../../assets/styles/variable';
+
+.chart {
+  position: relative;
+  align-items: center;
+  height: 717px;
+  justify-content: center;
+
+  &__map {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    bottom: 5%;
+    right: 10%;
+  }
+
+  &__image {
+    position: absolute;
+    width: 326px;
+    height: 345px;
+    top: 5%;
+    left: 10%;
+  }
+
+  &__text-box {
+    position: relative;
+    align-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 96px;
+    font-weight: 800;
+
+    &--mobile {
+      font-size: 56px;
+    }
+  }
+
+  &__text-box {
+    .text-white {
+      color: $white;
+    }
+  }
+}
+
+.round {
+  position: absolute;
+  top: 8%;
+  left: 20%;
+  bottom: 22%;
+  right: 10%;
+}

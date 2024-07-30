@@ -1,5 +1,5 @@
 import { Image, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import IMAGES from "../../../constants/image";
 import { useDevice } from "../../../hooks/useDevice";
 
@@ -9,9 +9,9 @@ const Chart = () => {
 
   return (
     <div
-      className={`${isMobile ? "container container--mobile" : "container"} bg-dark-red chart-wrapper`}
+      className={`${isMobile ? "container--mobile" : ""} container bg-dark-red chart`}
     >
-      <div className="chart">
+      <div className="chart__map">
         <Image
           preview={false}
           width="100%"

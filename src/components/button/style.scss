@@ -1,0 +1,91 @@
+@import '../../assets/styles/variable';
+
+.btn-component {
+  position: relative;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 8px;
+  border-radius: 8px;
+  border-width: 0;
+  border-style: solid;
+  flex-shrink: 0;
+}
+
+.btn-component--py-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-component:hover {
+  color: $black-hover;
+  border-color: $black-hover;
+}
+
+.btn-component:hover span {
+  color: $black-hover;
+  border-color: $black-hover;
+}
+
+.btn-component .text-dark-red {
+  color: $dark-red;
+  border-color: $dark-red;
+}
+
+.btn-component .text-dark-red:hover {
+  color: $dark-red-hover;
+  border-color: $dark-red-hover;
+}
+
+.btn-component:hover .text-dark-red {
+  color: $dark-red-hover;
+  border-color: $dark-red-hover;
+}
+
+.btn-dark-red {
+  color: $dark-red;
+  border-color: $dark-red;
+}
+
+.btn-dark-red:hover {
+  color: $dark-red-hover;
+  border-color: $dark-red-hover;
+}
+
+.btn-dark-red:hover svg {
+  color: $dark-red-hover;
+  border-color: $dark-red-hover;
+}
+
+.btn-white {
+  color: $white;
+  border-color: $white;
+}
+
+.btn-white:hover {
+  color: $white-hover;
+  border-color: $white-hover;
+}
+
+.btn-component:hover .text-white {
+  color: $white-hover;
+  border-color: $white-hover;
+}
+
+.btn-outline {
+  padding: 12px;
+  border-width: 2px;
+}
+
+.active {
+  box-shadow: 0px 4px 6px -1px #0000001A;
+  background: $white;
+}

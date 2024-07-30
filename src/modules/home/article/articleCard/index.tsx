@@ -1,5 +1,5 @@
 import { Card, Flex, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import { Article } from "../../../../types/card";
 import Button from "../../../../components/button";
 

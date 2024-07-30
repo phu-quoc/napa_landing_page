@@ -1,0 +1,18 @@
+.app-header {
+  background: transparent;
+  padding: 24px 80px;
+
+  &--mobile {
+    padding: 16px;
+  }
+
+  &__menu-scale {
+    transform: rotateY(180deg);
+  }
+}
+
+.logo {
+  padding: 0;
+}
+
+

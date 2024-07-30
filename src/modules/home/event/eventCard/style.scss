@@ -1,0 +1,27 @@
+.event {
+  .event-card {
+    box-shadow: 0 10px 15px -3px #0000001A;
+
+    &__body {
+      padding: 24px 16px 0 16px;
+    }
+
+    &__image {
+      border-radius: 10px;
+    }
+
+    &__footer {
+      padding: 16px;
+    }
+
+    &__button {
+      padding: 12px 8px 12px 0;
+    }
+
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+}
+

@@ -1,5 +1,5 @@
 import { Col, Flex, Row, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import FeedbackCard from "./feedbackCard";
 import Button from "../../../components/button";
 import { FEEDBACKS } from "../../../mocks/feedbacks";

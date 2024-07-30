@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./style.css";
+import "./style.scss";
 
 type Props = {
   type?: "button" | "submit";

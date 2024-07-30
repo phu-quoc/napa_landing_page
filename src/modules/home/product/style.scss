@@ -1,7 +1,5 @@
 .product {
-}
-
-.product__backlights {
+  &__backlights {
     position: absolute;
     background-image: url("../../../assets/images/svg/bg-backlights.svg");
     background-repeat: no-repeat;
@@ -11,25 +9,29 @@
     top: 40px;
     left: 50%;
     transform: translate(-50%, 0);
-}
+  }
 
-.product .card {
-    box-shadow: 0px 25px 50px -12px #FFFFFF40;
-}
+  .card {
+    box-shadow: 0 25px 50px -12px #FFFFFF40;
+  }
 
-.product__group {
+  &__group {
     position: relative;
+  }
 }
 
-.card-body {
-    padding: 32px 32px 0px 32px;
-}
 
-.card-footer {
+.card {
+  .ant-card-body {
+    padding: 0;
+  }
+
+  &-body {
+    padding: 32px 32px 0 32px;
+  }
+
+  &-footer {
     padding: 32px;
-}
-
-.card .ant-card-body {
-    padding: 0px;
+  }
 }
 

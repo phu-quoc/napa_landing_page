@@ -1,0 +1,33 @@
+.feedback-card {
+    box-shadow: 0 10px 15px -3px #0000001A;
+    padding: 32px;
+
+    &__header {
+        padding: 16px 0;
+    }
+
+    &__body {
+        margin-top: 16px;
+    }
+
+    &__footer {
+        margin-top: 16px;
+        padding: 16px 0 0 0;
+    }
+
+    &__button {
+        padding: 12px 8px 12px 0;
+    }
+
+    .ant-card-body {
+        padding: 0;
+        height: 100%;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 82%;
+    }
+}

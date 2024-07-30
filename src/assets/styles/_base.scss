@@ -1,0 +1,312 @@
+@import './variable';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 800 !important;
+  font-size: 72px !important;
+  margin: 0 !important;
+}
+
+h2 {
+  font-weight: 800 !important;
+  font-size: 56px !important;
+  margin: 0 !important;
+}
+
+h3 {
+  font-weight: 800 !important;
+  font-size: 48px !important;
+  margin: 0 !important;
+}
+
+h5 {
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  margin: 0 !important;
+}
+
+p, span {
+  letter-spacing: 0.5px !important;
+}
+
+/* Main app */
+.layout {
+  background: transparent;
+}
+
+.app-bg {
+  background: $app-bg;
+}
+
+.app-bg--mobile {
+  background: $white;
+}
+
+.header-bar {
+  background: transparent;
+  border: 0;
+}
+
+.content {
+  margin: 24px 16px;
+  padding: 20px;
+}
+
+.trigger-btn {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.container {
+  padding: 80px;
+  overflow-x: hidden;
+}
+
+.container--mobile {
+  padding: 48px 16px;
+}
+
+.link:hover {
+  color: $dark-red-hover !important;
+  border-color: $dark-red-hover;
+}
+
+.link-span:hover span {
+  color: $dark-red-hover !important;
+}
+
+/* Sider */
+
+.sider {
+  height: 100vh;
+  position: sticky !important;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+/* Colors */
+.app-header .dark-red {
+  color: $dark-red;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.bg-dark-red {
+  background: $dark-red;
+  overflow-x: hidden;
+}
+
+/* Font weight */
+.font-weight-4 {
+  font-weight: 400;
+}
+
+.font-weight-5 {
+  font-weight: 500 !important;
+}
+
+/* Font size */
+.text-16 {
+  font-size: 16px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.h6 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Margin */
+.mt-4 {
+  margin-top: 4px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+
+/* Padding */
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-48 {
+  padding-top: 48px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-128 {
+  padding-bottom: 128px;
+}
+
+
+.px-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.px-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.px-160 {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.py-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.py-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+
+/* Button */
+
+.border-dark-red {
+  border-color: $dark-red;
+}
+
+/* Index */
+.hero-picture {
+  width: 367px;
+  height: 372px;
+  border-radius: 50px;
+  background: $golden;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Colors */
+.text-dark-red {
+  color: $dark-red;
+}
+
+.text-light-grey {
+  color: $light-grey;
+}
+
+.text-white {
+  color: $white;
+}
+
+/* Background Colors */
+
+.bg-dark {
+  background: $dark;
+}
+
+.bg-white {
+  background: $white;
+}

@@ -1,0 +1,51 @@
+@import '../../assets/styles/variable';
+
+.link-component {
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 8px;
+}
+
+.link-component:hover {
+  color: $black-hover;
+  border-color: $black-hover;
+}
+
+.link-component .text-dark-red {
+  color: $dark-red;
+  border-color: $dark-red;
+}
+
+
+.link-component:hover .text-dark-red {
+  color: $dark-red-hover;
+  border-color: $dark-red-hover;
+}
+
+.link-dark-red {
+  color: $dark-red;
+}
+
+.link-dark-red:hover,
+.link-dark-red:hover svg,
+.link-dark-red:hover span {
+  color: $dark-red-hover;
+}
+
+.link-white {
+  color: $white;
+}
+
+.link-white:hover {
+  color: $white;
+}
+

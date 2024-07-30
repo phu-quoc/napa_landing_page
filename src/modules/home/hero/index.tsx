@@ -1,6 +1,6 @@
 import { Col, Flex, Image, Row, Typography } from "antd";
 import { PlayCircleOutlined } from "@ant-design/icons";
-import "./style.css";
+import "./style.scss";
 import Button from "../../../components/button";
 import LinkComponent from "../../../components/link";
 import IMAGES from "../../../constants/image";
@@ -33,7 +33,7 @@ const Hero = () => {
               ultrices amet.
             </Paragraph>
             <Flex className="mt-32">
-              <Button className="btn-outline btn-dark-red p-16 font-size-20">
+              <Button className="btn-outline btn-dark-red p-16 text-20">
                 Sign up now
               </Button>
               <LinkComponent

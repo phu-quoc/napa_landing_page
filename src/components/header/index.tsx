@@ -1,5 +1,5 @@
 import { Flex, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import LinkComponent from "../link";
 import { useDevice } from "../../hooks/useDevice";
 import Button from "../button";

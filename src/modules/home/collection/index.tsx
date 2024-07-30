@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col, Flex, Image, Row, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import Button from "../../../components/button";
 import { COLLECTIONS } from "../../../mocks/collections";
 import IMAGES from "../../../constants/image";
@@ -44,7 +44,7 @@ const Collection = () => {
                   }}
                 >
                   {item.icon}
-                  <Text className="font-size-20 px-0 py-16">{item.text}</Text>
+                  <Text className="text-20 px-0 py-16">{item.text}</Text>
                   {active === i && (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

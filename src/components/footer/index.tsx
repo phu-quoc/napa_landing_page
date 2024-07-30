@@ -1,5 +1,5 @@
 import { Col, Flex, Image, List, Row, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import Button from "../button";
 import { FOOTERS } from "../../mocks/footers";
 import IMAGES from "../../constants/image";
@@ -20,7 +20,7 @@ const Footer = () => {
         {FOOTERS.map((data, i) => (
           <Col xs={24} sm={24} md={24} lg={6} xl={6} xxl={6} key={i}>
             <List
-              className="footer_list"
+              className="footer__list"
               header={
                 <Text className="footer__subtitle ant-list-header">
                   {data.header}

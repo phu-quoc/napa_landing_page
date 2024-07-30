@@ -1,0 +1,31 @@
+.article {
+  &-card {
+    box-shadow: 0px 10px 15px -3px #0000001A;
+
+    &__body {
+      padding: 32px 32px 0 32px;
+
+      &--mobile {
+        padding: 16px 16px 0 16px;
+      }
+    }
+
+    &__footer {
+      padding: 16px 32px;
+
+      &--mobile {
+        padding: 16px;
+      }
+    }
+
+    &__button {
+      padding: 12px 0;
+    }
+
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+}
+
+

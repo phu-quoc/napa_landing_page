@@ -1,5 +1,5 @@
 import { Avatar, Card, Image, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import { Feedback } from "../../../../types/card";
 
 const { Text } = Typography;
@@ -25,7 +25,7 @@ const FeedbackCard = ({ item, className, onClick, isMobile }: Props) => {
       </div>
       <div className="feedback-card__bottom">
         <div className="feedback-card__body">
-          <Text className={isMobile ? "text-16" : "font-size-24"}>
+          <Text className={isMobile ? "text-16" : "text-24"}>
             {item.content}
           </Text>
         </div>

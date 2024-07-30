@@ -1,5 +1,5 @@
 import { Col, Flex, Row, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import EventCard from "./eventCard";
 import LinkComponent from "../../../components/link";
 import Button from "../../../components/button";
@@ -12,11 +12,11 @@ const Event = () => {
   const { isMobile } = useDevice();
 
   return (
-    <div className="event__wrapper">
+    <div className="event">
       <div
         className={`${
           isMobile ? "container--mobile" : ""
-        } container event event--bg-image`}
+        } container event__wrapper event--bg-image`}
       >
         <Flex
           justify={isMobile ? "center" : "space-between"}
@@ -63,13 +63,13 @@ const Event = () => {
           align="center"
           wrap
         >
-          <Title level={isMobile ? 5 : 2} className="event__text-box-title">
+          <Title level={isMobile ? 5 : 2} className="event__signup--title">
             Collect More Sneakers Today
           </Title>
           <Button
             className={`${isMobile ? "btn-outline mt-32" : "btn-outline"} btn-white px-20 py-24 font-size-24 `}
           >
-            <Text className="py-24 text-white font-size-24">Sign up now</Text>
+            <Text className="py-24 text-white text-24">Sign up now</Text>
           </Button>
         </Flex>
       </div>

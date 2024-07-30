@@ -1,22 +1,21 @@
+@import '../../../assets/styles/variable';
+
+
 .event {
-    background: var(--event-bg);
-}
+  position: relative;
 
-.event__wrapper {
-    position: relative;
-}
-
-.event--bg-image {
+  &--bg-image {
     background-image: url("../../../assets/images/svg/bg-event.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom center;
-}
+  }
 
-.event__signup {
-}
+  &__wrapper {
+    background: $event-bg;
+  }
 
-.event__bg-signup {
+  &__bg-signup {
     position: absolute;
     background-image: url("../../../assets/images/svg/bg-event-backlights.svg");
     background-repeat: no-repeat;
@@ -26,16 +25,17 @@
     right: 0;
     width: 185px;
     height: 285px;
-}
+  }
 
-.event .event__text-16 {
+  &__text-16 {
     font-size: 16px;
-}
+  }
 
-.event__text-box--mobile {
+  &__text-box--mobile {
     text-align: center;
-}
+  }
 
-.event__wrapper .event__text-box-title {
-    color: var(--white);
+  .event__signup--title {
+    color: $white;
+  }
 }

@@ -1,5 +1,5 @@
 import { Card, Image, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import { Event } from "../../../../types/card";
 import Button from "../../../../components/button";
 

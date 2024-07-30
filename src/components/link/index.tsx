@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import { ReactNode } from "react";
 import { Link, To } from "react-router-dom";
 

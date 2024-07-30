@@ -1,5 +1,5 @@
 import { Col, Flex, Row, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 
 import ArticleCard from "./articleCard";
 import LinkComponent from "../../../components/link";

@@ -3,17 +3,16 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom center;
-}
 
-.collection--mobile {
-    padding: 48px 16px 96px 16px;
-}
+    &--mobile {
+        padding: 48px 16px 96px 16px;
+    }
 
-.collection__text-box--mobile {
-    text-align: center;
-}
+    &__text-box--mobile {
+        text-align: center;
+    }
 
-.collection__group-button--gap {
-    gap: 16px;
+    &__group-button--gap {
+        gap: 16px;
+    }
 }
-

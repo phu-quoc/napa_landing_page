@@ -1,5 +1,5 @@
 import { Col, Flex, Row, Typography } from "antd";
-import "./style.css";
+import "./style.scss";
 import Button from "../../../components/button";
 import IMAGES from "../../../constants/image";
 import { useDevice } from "../../../hooks/useDevice";
@@ -11,7 +11,7 @@ const Registration = () => {
 
   return (
     <Flex
-      className={`${isMobile ? "registration--mobile" : ""} container px-160`}
+      className={`${isMobile ? "registration--mobile" : ""} registration container px-160`}
       vertical
     >
       <Flex className={`${isMobile ? "box--mobile" : ""} box`} vertical>
@@ -33,7 +33,7 @@ const Registration = () => {
                 >
                   <path d="M5.486 9.73a.997.997 0 0 1-.707-.292L.537 5.195A1 1 0 1 1 1.95 3.78l3.535 3.535L11.85.952a1 1 0 0 1 1.415 1.414L6.193 9.438a.997.997 0 0 1-.707.292z"></path>
                 </svg>
-                <Text className="font-size-20 ml-8">
+                <Text className="text-20 ml-8">
                   Est et in pharetra magna adipiscing ornare aliquam.
                 </Text>
               </Flex>
@@ -46,7 +46,7 @@ const Registration = () => {
                 >
                   <path d="M5.486 9.73a.997.997 0 0 1-.707-.292L.537 5.195A1 1 0 1 1 1.95 3.78l3.535 3.535L11.85.952a1 1 0 0 1 1.415 1.414L6.193 9.438a.997.997 0 0 1-.707.292z"></path>
                 </svg>
-                <Text className="font-size-20 ml-8">
+                <Text className="text-20 ml-8">
                   Tellus arcu sed consequat ac velit ut eu blandit.
                 </Text>
               </Flex>
@@ -59,7 +59,7 @@ const Registration = () => {
                 >
                   <path d="M5.486 9.73a.997.997 0 0 1-.707-.292L.537 5.195A1 1 0 1 1 1.95 3.78l3.535 3.535L11.85.952a1 1 0 0 1 1.415 1.414L6.193 9.438a.997.997 0 0 1-.707.292z"></path>
                 </svg>
-                <Text className="font-size-20 ml-8">
+                <Text className="text-20 ml-8">
                   Ullamcorper ornare in et egestas dolor orci.
                 </Text>
               </Flex>
