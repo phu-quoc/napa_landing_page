@@ -5,8 +5,9 @@ import Button from "../../../components/button";
 import { COLLECTIONS } from "../../../mocks/collections";
 import IMAGES from "../../../constants/image";
 import { useDevice } from "../../../hooks/useDevice";
+import Text from "../../../components/text";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const Collection = () => {
   const { isMobile } = useDevice();
   const [active, setActive] = useState(0);
@@ -19,7 +20,7 @@ const Collection = () => {
     >
       <Flex vertical className={isMobile ? "collection__text-box--mobile" : ""}>
         <Title level={isMobile ? 5 : 2}>Grow your collection</Title>
-        <Text className={`${isMobile ? "text-16" : "text-18"} mt-32`}>
+        <Text size={isMobile ? "16" : "18"} className={`mt-32`}>
           Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh
           amet dictum pellentesque sed. Eu non turpis risus odio sapien, fames
           sit rhoncus. Nec magna sed interdum sit purus tellus. Et volutpat
@@ -44,7 +45,9 @@ const Collection = () => {
                   }}
                 >
                   {item.icon}
-                  <Text className="text-20 px-0 py-16">{item.text}</Text>
+                  <Text size="20" className="px-0 py-16">
+                    {item.text}
+                  </Text>
                   {active === i && (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

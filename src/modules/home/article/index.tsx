@@ -6,8 +6,9 @@ import LinkComponent from "../../../components/link";
 import { ARTICLES } from "../../../mocks/articles";
 import { useDevice } from "../../../hooks/useDevice";
 import ROUTERS from "../../../constants/router";
+import Text from "../../../components/text";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const Article = () => {
   const { isMobile } = useDevice();
@@ -24,7 +25,7 @@ const Article = () => {
           className="link-dark-red py-0"
         >
           <Flex justify="center" align="center">
-            <Text className="px-0 py-16 text-dark-red article__text-16">
+            <Text color="dark-red" className="px-0 py-16">
               More Articles
             </Text>
             <svg

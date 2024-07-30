@@ -7,8 +7,9 @@ import IMAGES from "../../../constants/image";
 import { useDevice } from "../../../hooks/useDevice";
 import { HEROES } from "../../../mocks/heroes";
 import ROUTERS from "../../../constants/router";
+import Text from "../../../components/text";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 const Hero = () => {
   const { isMobile } = useDevice();
   return (
@@ -41,7 +42,9 @@ const Hero = () => {
                 className="link-dark-red ml-16"
               >
                 <PlayCircleOutlined />
-                <Text className="hero__text text-dark-red">Watch Demo</Text>
+                <Text color="dark-red" className="hero__text">
+                  Watch Demo
+                </Text>
               </LinkComponent>
             </Flex>
           </Flex>
@@ -58,8 +61,10 @@ const Hero = () => {
                 {item.block}
                 <img width="50px" className="hero__icon-1" src={item.image} />
               </div>
-              <Text className="sub-title">{item.title}</Text>
-              <Text className="text-18">{item.content}</Text>
+              <Text size="20" weight="5">
+                {item.title}
+              </Text>
+              <Text size="18">{item.content}</Text>
             </Flex>
           </Col>
         ))}

@@ -1,9 +1,8 @@
-import { Card, Image, Typography } from "antd";
+import { Card, Image } from "antd";
 import "./style.scss";
 import { Event } from "../../../../types/card";
 import Button from "../../../../components/button";
-
-const { Text } = Typography;
+import Text from "../../../../components/text";
 
 type Props = {
   item: Event;
@@ -21,9 +20,11 @@ const EventCard = ({ item, className, onClick }: Props) => {
     >
       <div className="event-card__body">
         <div>
-          <Text className="text-18">{item.text}</Text>
+          <Text size="18">{item.text}</Text>
         </div>
-        <Text className="h6">{item.title}</Text>
+        <Text size="24" weight="7">
+          {item.title}
+        </Text>
         <div className="mt-16">
           <Image
             preview={false}
@@ -37,7 +38,9 @@ const EventCard = ({ item, className, onClick }: Props) => {
       </div>
       <div className="event-card__footer">
         <Button className="event-card__button btn-dark-red">
-          <Text className="px-0 py-0 pr-16 text-16 text-dark-red">Buy Now</Text>
+          <Text size="16" color="dark-red" className="px-0 py-0 pr-16">
+            Buy Now
+          </Text>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="-5 -5 24 24"

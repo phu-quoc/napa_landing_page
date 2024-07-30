@@ -1,9 +1,8 @@
-import { Card, Flex, Typography } from "antd";
+import { Card, Flex } from "antd";
 import "./style.scss";
 import { Article } from "../../../../types/card";
 import Button from "../../../../components/button";
-
-const { Text } = Typography;
+import Text from "../../../../components/text";
 
 type Props = {
   item: Article;
@@ -17,7 +16,7 @@ const ArticleCard = ({ item, className, onClick, isMobile }: Props) => {
       onClick={onClick}
       hoverable
       bordered={false}
-      className={`${className ? `article-card ${className}` : "article-card"}`}
+      className={`article-card ${className || ""}`}
       style={{ borderRadius: 4, height: "100%" }}
       cover={
         <img
@@ -38,8 +37,12 @@ const ArticleCard = ({ item, className, onClick, isMobile }: Props) => {
             ${isMobile ? "article-card__body--mobile" : ""} article-card__body
           `}
       >
-        <Text className="h6">{item.title}</Text>
-        <Text className="text-18 mt-16">{item.content}</Text>
+        <Text size="24" weight="7">
+          {item.title}
+        </Text>
+        <Text size="18" className="mt-16">
+          {item.content}
+        </Text>
       </Flex>
       <div
         className={`${
@@ -48,7 +51,7 @@ const ArticleCard = ({ item, className, onClick, isMobile }: Props) => {
       >
         <Button className="btn-component--py-0 btn-dark-red">
           <Flex>
-            <Text className="px-0 py-0 pr-16 text-16 text-dark-red">
+            <Text size="16" color="dark-red" className="px-0 py-0 pr-16">
               Buy Now
             </Text>
             <svg

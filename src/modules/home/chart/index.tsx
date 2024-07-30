@@ -2,8 +2,9 @@ import { Image, Typography } from "antd";
 import "./style.scss";
 import IMAGES from "../../../constants/image";
 import { useDevice } from "../../../hooks/useDevice";
+import Text from "../../../components/text";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const Chart = () => {
   const { isMobile } = useDevice();
 
@@ -34,8 +35,10 @@ const Chart = () => {
       <img src={IMAGES.CHART_POINT} className="chart__image" alt="" />
       <div className="chart__text-box">
         <Text
+          color="white"
+          weight="8"
           className={`${isMobile ? "chart__title--mobile" : ""}
-              chart__title text-white`}
+              chart__title`}
         >
           11,658,467
         </Text>

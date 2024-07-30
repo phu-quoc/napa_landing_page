@@ -6,8 +6,9 @@ import Button from "../../../components/button";
 import { EVENTS } from "../../../mocks/events";
 import { useDevice } from "../../../hooks/useDevice";
 import ROUTERS from "../../../constants/router";
+import Text from "../../../components/text";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const Event = () => {
   const { isMobile } = useDevice();
 
@@ -29,7 +30,7 @@ const Event = () => {
             className="link-dark-red py-0"
           >
             <Flex justify="center" align="center">
-              <Text className="px-0 py-16 text-dark-red event__text-16">
+              <Text color="dark-red" className="px-0 py-16">
                 Explore Articles
               </Text>
               <svg
@@ -69,7 +70,9 @@ const Event = () => {
           <Button
             className={`${isMobile ? "btn-outline mt-32" : "btn-outline"} btn-white px-20 py-24 font-size-24 `}
           >
-            <Text className="py-24 text-white text-24">Sign up now</Text>
+            <Text size="24" color="white" className="py-24">
+              Sign up now
+            </Text>
           </Button>
         </Flex>
       </div>

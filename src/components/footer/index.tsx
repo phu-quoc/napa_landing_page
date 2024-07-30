@@ -1,4 +1,4 @@
-import { Col, Flex, Image, List, Row, Typography } from "antd";
+import { Col, Flex, Image, List, Row } from "antd";
 import "./style.scss";
 import Button from "../button";
 import { FOOTERS } from "../../mocks/footers";
@@ -6,8 +6,8 @@ import IMAGES from "../../constants/image";
 import { useDevice } from "../../hooks/useDevice";
 import ROUTERS from "../../constants/router";
 import LinkComponent from "../link";
+import Text from "../text";
 
-const { Text } = Typography;
 const { Item } = List;
 const Footer = () => {
   const { isMobile } = useDevice();
@@ -22,7 +22,7 @@ const Footer = () => {
             <List
               className="footer__list"
               header={
-                <Text className="footer__subtitle ant-list-header">
+                <Text weight="5" className="footer__subtitle ant-list-header">
                   {data.header}
                 </Text>
               }
@@ -41,7 +41,9 @@ const Footer = () => {
           </Col>
         ))}
         <Col xs={24} sm={24} md={24} lg={6} xl={6} xxl={6}>
-          <Text className="footer__subtitle text-white">Get the App</Text>
+          <Text weight="5" className="footer__subtitle">
+            Get the App
+          </Text>
           <div className="mt-8">
             <Button className="footer__button">
               <Image preview={false} width="100%" src={IMAGES.APP_STORE} />
@@ -53,7 +55,9 @@ const Footer = () => {
             </Button>
           </div>
           <div className="pt-48 pb-12 py-0 mt-8">
-            <Text className="footer__subtitle text-white">Follow Us</Text>
+            <Text weight="5" className="footer__subtitle">
+              Follow Us
+            </Text>
           </div>
           <Flex justify={isMobile ? "center" : "flex-start"}>
             <Button className="footer__button">
@@ -129,7 +133,7 @@ const Footer = () => {
           md={24}
           className="footer__copyright-text"
         >
-          <Text className="text-white text-16">
+          <Text size="16" className="text-white">
             Collers @ 2023. All rights reserved.
           </Text>
         </Col>
