@@ -1,4 +1,3 @@
-import "./style.css";
 import { lazy } from "react";
 
 const Hero = lazy(() => import("../../modules/home/hero"));

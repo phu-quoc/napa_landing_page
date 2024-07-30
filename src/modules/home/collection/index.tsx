@@ -45,7 +45,7 @@ const Collection = () => {
                   }}
                 >
                   {item.icon}
-                  <Text size="20" className="px-0 py-16">
+                  <Text size="20" weight="5" className="px-0 py-16">
                     {item.text}
                   </Text>
                   {active === i && (

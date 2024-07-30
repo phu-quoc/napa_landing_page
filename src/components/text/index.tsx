@@ -1,6 +1,7 @@
 import { Typography } from "antd";
 import { TextProps } from "antd/es/typography/Text";
 import { clsx } from "clsx";
+import "./style.scss";
 
 type Props = TextProps & {
   size?: "16" | "18" | "20" | "24";
@@ -21,9 +22,10 @@ const Text = ({
   return (
     <Typography.Text
       className={clsx(
-        `text-${size}`,
-        `font-weight-${weight}`,
-        `text-${color}`,
+        "component-text",
+        `component-text-size-${size}`,
+        `component-text-weight-${weight}`,
+        `component-text-color-${color}`,
         className,
       )}
       style={style}

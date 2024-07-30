@@ -82,7 +82,9 @@ const Header = () => {
           <LinkComponent to={ROUTERS.LOGIN.path} className="link-dark-red mr-8">
             Log In
           </LinkComponent>
-          <Button className="btn-outline btn-dark-red">Sign up now</Button>
+          <Button className="btn-outline btn-dark-red text-16">
+            Sign up now
+          </Button>
         </Flex>
       )}
     </Flex>

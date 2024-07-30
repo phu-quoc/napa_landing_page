@@ -11,43 +11,69 @@
   cursor: pointer;
   user-select: none;
   background: transparent;
-  font-size: 16px;
   font-weight: 500;
   padding: 12px 8px;
   border-radius: 8px;
   border-width: 0;
   border-style: solid;
   flex-shrink: 0;
+
+  &--py-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:hover {
+    color: $black-hover;
+    border-color: $black-hover;
+  }
+
+  &:hover span {
+    color: $black-hover;
+    border-color: $black-hover;
+  }
+
+  .text-dark-red {
+    color: $dark-red;
+    border-color: $dark-red;
+  }
+
+  .text-dark-red:hover {
+    color: $dark-red-hover;
+    border-color: $dark-red-hover;
+  }
+
+  &:hover {
+    .text-dark-red {
+      color: $dark-red-hover;
+      border-color: $dark-red-hover;
+    }
+  }
+
+  &:hover {
+    .text-white {
+      color: $white-hover;
+      border-color: $white-hover;
+    }
+  }
+
+  .text-20 {
+    font-size: 20px;
+  }
+
+  .text-16 {
+    font-size: 16px;
+  }
 }
 
-.btn-component--py-0 {
-  padding-left: 0;
-  padding-right: 0;
+.btn-outline {
+  padding: 12px;
+  border-width: 2px;
 }
 
-.btn-component:hover {
-  color: $black-hover;
-  border-color: $black-hover;
-}
-
-.btn-component:hover span {
-  color: $black-hover;
-  border-color: $black-hover;
-}
-
-.btn-component .text-dark-red {
-  color: $dark-red;
-  border-color: $dark-red;
-}
-
-.btn-component .text-dark-red:hover {
-  color: $dark-red-hover;
-  border-color: $dark-red-hover;
-}
-
-.btn-component:hover .text-dark-red {
-  color: $dark-red-hover;
-  border-color: $dark-red-hover;
+.active {
+  box-shadow: 0 4px 6px -1px #0000001A;
+  background: $white;
 }
 
 .btn-dark-red {
@@ -73,19 +99,4 @@
 .btn-white:hover {
   color: $white-hover;
   border-color: $white-hover;
-}
-
-.btn-component:hover .text-white {
-  color: $white-hover;
-  border-color: $white-hover;
-}
-
-.btn-outline {
-  padding: 12px;
-  border-width: 2px;
-}
-
-.active {
-  box-shadow: 0px 4px 6px -1px #0000001A;
-  background: $white;
 }

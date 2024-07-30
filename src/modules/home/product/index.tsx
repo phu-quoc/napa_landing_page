@@ -21,7 +21,7 @@ const Product = () => {
           The best of the best
         </Title>
         <Button
-          className={`${isMobile ? "btn-outline mt-32" : "btn-outline"} btn-white px-20 py-24 font-size-24`}
+          className={`${isMobile ? "btn-outline mt-32" : "btn-outline"} btn-white px-20 py-24 text-24`}
         >
           Sign up now
         </Button>

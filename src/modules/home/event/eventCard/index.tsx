@@ -38,7 +38,12 @@ const EventCard = ({ item, className, onClick }: Props) => {
       </div>
       <div className="event-card__footer">
         <Button className="event-card__button btn-dark-red">
-          <Text size="16" color="dark-red" className="px-0 py-0 pr-16">
+          <Text
+            size="16"
+            color="dark-red"
+            weight="5"
+            className="px-0 py-0 pr-16"
+          >
             Buy Now
           </Text>
           <svg

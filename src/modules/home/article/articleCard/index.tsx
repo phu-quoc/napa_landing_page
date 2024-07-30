@@ -51,7 +51,12 @@ const ArticleCard = ({ item, className, onClick, isMobile }: Props) => {
       >
         <Button className="btn-component--py-0 btn-dark-red">
           <Flex>
-            <Text size="16" color="dark-red" className="px-0 py-0 pr-16">
+            <Text
+              size="16"
+              color="dark-red"
+              weight="5"
+              className="px-0 py-0 pr-16"
+            >
               Buy Now
             </Text>
             <svg

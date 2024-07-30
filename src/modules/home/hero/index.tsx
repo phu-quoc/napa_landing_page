@@ -42,7 +42,7 @@ const Hero = () => {
                 className="link-dark-red ml-16"
               >
                 <PlayCircleOutlined />
-                <Text color="dark-red" className="hero__text">
+                <Text color="dark-red" weight="5" className="hero__text">
                   Watch Demo
                 </Text>
               </LinkComponent>

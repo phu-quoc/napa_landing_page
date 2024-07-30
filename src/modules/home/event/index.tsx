@@ -30,7 +30,7 @@ const Event = () => {
             className="link-dark-red py-0"
           >
             <Flex justify="center" align="center">
-              <Text color="dark-red" className="px-0 py-16">
+              <Text color="dark-red" weight="5" className="px-0 py-16">
                 Explore Articles
               </Text>
               <svg
